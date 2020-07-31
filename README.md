@@ -108,6 +108,16 @@ Update: PUT, URL:http://localhost/laravelshop/public/api/apiproducts/{id}
 
 Delete: DELETE, URL: http://localhost/laravelshop/public/api/apiproducts/{id}
 
+
+## PHP Unit Test
+- Step 1
+```
+php artisan make:test DemoTest
+
+```
+```
+./vendor/bin/phpunit
+```
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
