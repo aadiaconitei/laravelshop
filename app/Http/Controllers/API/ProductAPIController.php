@@ -60,7 +60,7 @@ class ProductAPIController extends APIBaseController
             'price' => 'required',
         ]);
         $file = $request->file('photo');
-
+        //dd($request->file('photo'));die;
         if(!empty($file)) {
             $imageName = time().'.'.$file->getClientOriginalExtension();
             $file->move(public_path('images'), $imageName);
@@ -70,10 +70,17 @@ class ProductAPIController extends APIBaseController
         $product->name = $request->name;
         $product->description = $request->description;
         $product->price = $request->price;
-
-        $product->photo = $imageName;
+ 
+        if(isset($imageName) && !empty($imageName)){
+            $product->photo = $imageName;
+        }
+        
         $product->save();
-        return $this->sendResponse($product->toArray(), 'Product created successfully.');
+        return response()->json([
+            'success' => true,
+            'message' => 'Product created successfully.',
+        ]);
+        //return $this->sendResponse($product->toArray(), 'Product created successfully.');
     }
 
     /**
