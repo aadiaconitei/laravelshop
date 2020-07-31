@@ -32,10 +32,23 @@ class DemoTest extends TestCase
                     ];
             
             $response = $this->json('POST','api/apiproducts',$data);
-            //$response->assertStatus(200);
+            $response->assertStatus(200);
             $response->assertJson(['success' => true]);
             $response->assertJson(['message' => "Product created successfully."]);
             //$response->assertJson(['data' => $data]);
       }
+
+
+
+      public function testUpdateProduct()
+    {
+            $id=45;
+
+            
+            $update = $this->json('PATCH', '/api/apiproducts/'.$id,
+            ['name' => "Changed for test",'description'=>'Changed for description', 'price'=>24]);
+            $update->assertStatus(200);
+            $update->assertJson(['message' => "Product Updated!"]);
+        } 
 
 }

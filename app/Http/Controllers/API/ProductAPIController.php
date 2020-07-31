@@ -95,7 +95,10 @@ class ProductAPIController extends APIBaseController
         if (is_null($product)) {
             return $this->sendError('Product not found.');
 }
-        return $this->sendResponse($product->toArray(), 'Product retrieved successfully.');
+        //return $this->sendResponse($product->toArray(), 'Product retrieved successfully.');
+        return response()->json([
+            $product->toArray()
+        ]);
     }
 
     /**
@@ -124,7 +127,11 @@ class ProductAPIController extends APIBaseController
         $product->description = $input['description'];
         $product->price = $input['price'];
         $product->save();
-        return $this->sendResponse($product->toArray(), 'Product updated successfully.');
+        //return $this->sendResponse($product->toArray(), 'Product updated successfully.');
+        return response()->json([
+            'success' => true,
+            'message' => 'Product Updated!',
+        ]);
     }
 
     /**
