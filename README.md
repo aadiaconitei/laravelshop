@@ -118,6 +118,13 @@ php artisan make:test DemoTest
 ```
 ./vendor/bin/phpunit
 ```
+
+## Adding multi-language
+URL:https://dev.to/fadilxcoder/adding-multi-language-functionality-in-a-website-developed-in-laravel-4ech
+URL:https://medium.com/@ultimateakash/how-to-create-multi-language-website-using-laravel-localization-29237f03393b
+
+URL: https://therichpost.com/solved-laravel-angular-cors-issue/
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
