@@ -123,6 +123,7 @@ php artisan make:test DemoTest
 URL:https://dev.to/fadilxcoder/adding-multi-language-functionality-in-a-website-developed-in-laravel-4ech
 URL:https://medium.com/@ultimateakash/how-to-create-multi-language-website-using-laravel-localization-29237f03393b
 
+## Cross-origin
 URL: https://therichpost.com/solved-laravel-angular-cors-issue/
 URL: http://www.laravelinterviewquestions.com/trick/cross-origin-request-blocked-error-in-laravel-5-nje/
 URL: https://coderoad.ru/53997949/Angular-%D0%B8-Laravel-CORS-Access-Control-Allow-Origin-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%B8
