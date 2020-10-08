@@ -125,8 +125,10 @@ URL:https://medium.com/@ultimateakash/how-to-create-multi-language-website-using
 
 ## Cross-origin
 - URL: https://therichpost.com/solved-laravel-angular-cors-issue/
+- URL: https://stackoverflow.com/questions/53997949/angular-and-laravel-cors-access-control-allow-origin-issues
 - URL: http://www.laravelinterviewquestions.com/trick/cross-origin-request-blocked-error-in-laravel-5-nje/
 - URL: https://coderoad.ru/53997949/Angular-%D0%B8-Laravel-CORS-Access-Control-Allow-Origin-%D0%B2%D1%8B%D0%BF%D1%83%D1%81%D0%BA%D0%B8
+- URL: https://github.com/Mahanteshkumbar/Angular-8-Laravel-6-user-Login
 
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
